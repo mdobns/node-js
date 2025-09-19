@@ -11,3 +11,4 @@ export default function NotFound(){
         </div>
     );
 }
+// day 1 done
