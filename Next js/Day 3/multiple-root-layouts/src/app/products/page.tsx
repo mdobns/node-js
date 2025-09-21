@@ -1,5 +1,11 @@
 import '../global.css'
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Products Page",
+};
+
 
 export default function Products(){
     return(
