@@ -9,6 +9,10 @@ export default function Home(){
         <>
             <h1>Welcome Home! </h1>
             <Link href="/products">Go to Products</Link>
+            <Link href="/about">Go to About</Link>
+
+            <Link href={"/content/article-123?lang=en"}>Go to Article in EN</Link>
+            <Link href={"/content/article-123?lang=fr"}>Go to Article in FR</Link>
         </>
     );
         
