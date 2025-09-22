@@ -1,5 +1,5 @@
 export default function ForgotPassword(){
     return(
-        <><h1>Forgot Password Page</h1></> 
+        <><h1 className="text-2xl font-bold">Forgot Password Page</h1></> 
     );
 }
