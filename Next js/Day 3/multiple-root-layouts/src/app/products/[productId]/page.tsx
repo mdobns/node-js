@@ -3,6 +3,7 @@ type Props = {
   params: Promise<{ productId: string }>;
 };
 
+
 export const generateMetadata = async ( {params}: Props): Promise<Metadata> => {
     const id = (await params).productId;
     const name = await new Promise((resolve) => {
@@ -17,6 +18,7 @@ export const generateMetadata = async ( {params}: Props): Promise<Metadata> => {
 
 export default async function Product({ params }: Props) {
   const productId = (await params).productId;
-
+ 
+  
   return <h1>The details of product {productId}</h1>;
 }
