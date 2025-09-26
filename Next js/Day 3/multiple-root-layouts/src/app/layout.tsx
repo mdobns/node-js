@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import ErrorWrapper from "./error-wrapper"
+import Link from "next/dist/client/link"
 
 
 export const metadata: Metadata = {
@@ -25,8 +26,8 @@ export default function RootLayout({
             backgroundColor: "violet",
             padding: "1rem",
           }}>
-          <div>
-            
+          <div className="flex justify-between ">
+            <Link href="/">Home</Link>
             <h1> This is Header</h1>
           </div>
           </header>
