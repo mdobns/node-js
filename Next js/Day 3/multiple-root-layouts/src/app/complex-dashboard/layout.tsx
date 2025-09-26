@@ -2,14 +2,17 @@ export default function DashboardLayout({
     children,
     notifications,
     revenue,
-    userAnalytics
+    userAnalytics,
+    login
 }:{
     children: React.ReactNode,
     notifications: React.ReactNode,
     revenue: React.ReactNode,
-    userAnalytics: React.ReactNode  
+    userAnalytics: React.ReactNode,
+    login: React.ReactNode
 }){
-    return (
+    const isLoggedIn = true; // Change this to false to see the login page
+    return isLoggedIn? (
         <>
         <div>
            <div className='border-b border-gray-200'> {children}</div>
@@ -28,5 +31,9 @@ export default function DashboardLayout({
             </div>
         </div>
         </>
-    );
+    ):(
+        <div className='p-6'>
+            {login}
+        </div>
+    )
 }
