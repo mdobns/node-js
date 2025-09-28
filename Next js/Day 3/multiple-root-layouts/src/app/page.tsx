@@ -13,6 +13,7 @@ export default function Home(){
 
             <Link href={"/content/article-123?lang=en"}>Go to Article in EN</Link>
             <Link href={"/content/article-123?lang=fr"}>Go to Article in FR</Link>
+            <Link href={"/photo-feed"}>Go to Photo Feed</Link>
         </>
     );
         
